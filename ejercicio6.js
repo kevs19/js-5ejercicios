@@ -8,15 +8,13 @@ const arrayTest = [1,[2, 3, [4, 5, [6]]]];
 const result = [];
 
 function flatten (array) {
-    for(let i = 0; i < array.length; i++){
-        if(typeof(array[i]) === 'number') {
-            result.push(array[i]);
-            //console.log(result)
+    for(let index = 0; index < array.length; index++){
+        if(typeof(array[index]) == 'number') {
+            result.push(array[index]);
         } else {
-            return flatten(array[i])
+            return flatten(array[index])
         }
     }
-    //return result;
 }
 
 flatten(arrayTest);

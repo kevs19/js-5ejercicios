@@ -5,7 +5,7 @@ Write a program that asks a user for the amount of seconds needed until an alarm
 Result example: "Time for bed after 10 seconds".
 */
 
-let segundos = prompt("Por favor introduzca los segundos");
+var segundos = prompt("Por favor introduzca los segundos");
 segundos = Number(segundos);
 let tiempo = segundos * 1000
 const alarma = () => {
